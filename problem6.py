@@ -15,12 +15,12 @@ def word_scramble_sets(letters):
   >>> word_scramble_sets({"a", "b", "c", "c"})
   {"abc", "acb", "bac", "bca", "cab", "cba"}
   """
-  if len(set) == 1:
-    return set
+  if len(letters) == 1:
+    return letters
   result = set()
 
-  for letter in set:
-    remaining = set - {letter}
+  for letter in letters:
+    remaining = letters - {letter}
     for word in word_scramble_sets(remaining):
       result.add(letter + word)
   return result
