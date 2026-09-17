@@ -8,7 +8,7 @@ def merge_sets(set1, set2):
       result.add(x + y)
   return result
   
-def word_scramble_sets(set):
+def word_scramble_sets(letters):
   """
   world_scramble_sets returns a set containing all possible word scrambles
 
